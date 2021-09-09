@@ -5,14 +5,13 @@ const { createContainer, asClass, asValue, asFunction } = require("awilix");
 const config = require("../config");
 const app = require(".");
 
-// services
-const { HomeService } = require("../modules/module_one/services");
+// module home
+const {
+  HomeService,
+  HomeController,
+  HomeRoutes,
+} = require("../modules/module_one");
 
-// controllers
-const { HomeController } = require("../modules/module_one/controllers");
-
-// routes
-const { HomeRoutes } = require("../routes/index.routes");
 const Routes = require("../routes");
 
 const container = createContainer();
