@@ -20,3 +20,7 @@ Boilerplate for a NodeJS + Express Application
 - nodemon: reload server
 - mockingoose: mocking test
 - jest: framework testing
+
+## Editor Config
+- tabSize: 2
+- Prettier
