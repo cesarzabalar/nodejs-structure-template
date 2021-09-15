@@ -110,9 +110,9 @@ jobs:
             NODE_ENV
             MONGO_URI
             APP_NAME
-        env:
-          NODE_ENV: production
-          APP_NAME: ${{ secrets.APP_NAME }}
-          SECRET_KEY: ${{ secrets.MONGO_URI }}
-        run: |
-          echo $APP_NAME
+          env:
+            NODE_ENV: production
+            APP_NAME: ${{ secrets.APP_NAME }}
+            SECRET_KEY: ${{ secrets.MONGO_URI }}
+          run: |
+            echo $APP_NAME
