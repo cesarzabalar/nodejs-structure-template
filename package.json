@@ -6,7 +6,8 @@
   "scripts": {
     "start": "node index.js",
     "dev": "nodemon index.js",
-    "test": "jest"
+    "test": "jest",
+    "build": "echo Test build completed! No package was uploaded."
   },
   "author": "",
   "license": "ISC",
