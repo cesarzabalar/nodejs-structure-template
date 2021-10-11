@@ -10,6 +10,7 @@ const {
   HomeService,
   HomeController,
   HomeRoutes,
+  HomeModels
 } = require("../modules/module_one");
 
 const Routes = require("../routes");
@@ -30,6 +31,11 @@ container
   })
   .register({
     HomeRoutes: asFunction(HomeRoutes).singleton(),
+  })
+  .register({
+    User: asValue(HomeModels.User),
+    Idea: asValue(HomeModels.Idea),
+    Comment: asValue(HomeModels.Comment)
   });
 
 module.exports = container;
